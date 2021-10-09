@@ -1,0 +1,62 @@
+<html>
+<link rel="stylesheet" href="./styles/style.css" />
+<body>
+    <header>
+        <div id="slide">
+            <h1>Hello world!</h1>
+            <h1>Hello world 2!</h1>
+            <h1>Hello world 3!</h1>
+            <h1>Hello world 4!</h1>
+        </div>
+        <button class="left"
+        onclick="prev()"
+        ><span>&lt;</span></button>
+        <button class="right"
+        onclick="next()"
+        ><span>&gt;</span></button>
+    </header>
+    <div class="content">
+        <div>
+            <h1 style="display: none;">Hello world!</h1>
+        </div>
+        <div class="custom">
+            <h1>Hello world!</h1>
+            <button>Click me</button>
+        </div>
+        <button>Transparent</button>
+    </div>
+
+<script>
+    var slide = document.getElementById('slide');
+
+    let currentItem = 0;    
+    hideAllExcept(currentItem);
+    function next(){
+        currentItem++;
+        if(currentItem >= slide.children.length){
+            currentItem = 0;
+        }                
+        hideAllExcept(currentItem);        
+    }
+
+    function prev(){
+        currentItem--;
+        if(currentItem < 0){
+            currentItem = slide.children.length-1;
+        }                
+        hideAllExcept(currentItem);        
+    }
+
+    function hideAllExcept(index){
+        for(let i = 0; i < slide.children.length; i++){
+            let item = slide.children[i];
+            if(i != index){
+                item.classList.add('hidden');       
+            }        
+            slide.children[index].classList.remove('hidden');
+        }
+    }
+
+</script>
+</body>
+</html>

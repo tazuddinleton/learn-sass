@@ -1,0 +1,116 @@
+button {
+  padding: 2px 4px;
+  font-size: 14px;
+  border: none;
+  border-radius: 50px;
+  height: 60px;
+  -webkit-box-shadow: 2px 2px 3px #413e3e;
+          box-shadow: 2px 2px 3px #413e3e;
+  background: transparent;
+  min-width: 60px;
+  color: #fff;
+}
+
+button span {
+  font-size: 50px;
+  content: "U+0002B";
+}
+
+button:active, button:focus {
+  border: none;
+}
+
+button:hover {
+  -webkit-box-shadow: 4px 4px 6px #413e3e;
+          box-shadow: 4px 4px 6px #413e3e;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  min-height: 100vh;
+  background: #18aee0;
+  min-height: 500px;
+  border-radius: 0px 0px 30px 30px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+header .left {
+  position: relative;
+  left: -51%;
+  top: 50%;
+}
+
+header .right {
+  position: relative;
+  left: 41%;
+  top: 50%;
+}
+
+header h1 {
+  color: #0c0fa5;
+}
+
+header button {
+  background: rgba(3, 19, 241, 0.705);
+  color: #032538;
+  position: relative;
+  right: 2px;
+  top: 200px;
+}
+
+.custom button {
+  background: rgba(3, 19, 241, 0.705);
+  color: #032538;
+}
+
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+}
+
+.content .left {
+  position: relative;
+  left: -51%;
+  top: 50%;
+}
+
+.content .right {
+  position: relative;
+  left: 41%;
+  top: 50%;
+}
+
+.hidden {
+  display: none;
+}
+
+#slider h1 {
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+/*# sourceMappingURL=style.css.map */

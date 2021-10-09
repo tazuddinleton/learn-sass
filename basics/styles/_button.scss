@@ -1,0 +1,25 @@
+
+button {
+    padding: 2px 4px;
+    font-size: 14px;
+    border: none;
+    border-radius: 50px;
+    height: 60px;
+    box-shadow: 2px 2px 3px rgb(65, 62, 62);    
+    background: transparent;
+    min-width: 60px;
+    span {
+        font-size: 50px;
+        content: "U+0002B";
+    }
+    color: #fff;
+}
+
+button:active, button:focus{
+    border: none;
+}
+button:hover {
+    box-shadow: 4px 4px 6px rgb(65, 62, 62);
+}
+
+

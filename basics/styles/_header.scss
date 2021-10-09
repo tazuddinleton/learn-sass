@@ -1,0 +1,41 @@
+
+
+@mixin flex-center($flex-direction) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $flex-direction;
+    min-height: 100vh;
+
+    .left {
+        position: relative;
+        left: -51%;
+        top: 50%;
+    }
+
+    .right {
+        position: relative;
+        left: 41%;
+        top: 50%;
+    }
+}
+
+
+header {
+    @include flex-center(row);
+    background: rgb(24, 174, 224);        
+    min-height: 500px;
+    h1 {
+        color: rgb(12, 15, 165);        
+    }
+    button {
+        background: $primary;
+        color: $primary-contrast;
+        position: relative;
+        right: 2px;
+        top: 200px;
+    }
+
+    border-radius: 0px 0px 30px 30px;
+    box-shadow: none;
+}

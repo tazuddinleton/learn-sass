@@ -1,0 +1,18 @@
+{
+	"version": 3,
+	"file": "style.css",
+	"sources": [
+		"../styles/style.scss",
+		"../styles/_variables.scss",
+		"../styles/_button.scss",
+		"../styles/_header.scss"
+	],
+	"sourcesContent": [
+		"@import './variables';\r\n@import './button';\r\n@import './header';\r\n\r\n\r\n.custom button {\r\n    background: $primary;\r\n    color: $primary-contrast;\r\n}\r\n\r\n.content {\r\n    @include flex-center(column);\r\n}\r\n.hidden {\r\n    display: none;\r\n}\r\n\r\n#slider {\r\n    h1 {\r\n        transition: 1s;\r\n    }\r\n}",
+		"\r\n$primary : rgba(3, 19, 241, 0.705);\r\n$primary-contrast: rgb(3, 37, 56);\r\n\r\n",
+		"\r\nbutton {\r\n    padding: 2px 4px;\r\n    font-size: 14px;\r\n    border: none;\r\n    border-radius: 50px;\r\n    height: 60px;\r\n    box-shadow: 2px 2px 3px rgb(65, 62, 62);    \r\n    background: transparent;\r\n    min-width: 60px;\r\n    span {\r\n        font-size: 50px;\r\n        content: \"U+0002B\";\r\n    }\r\n    color: #fff;\r\n}\r\n\r\nbutton:active, button:focus{\r\n    border: none;\r\n}\r\nbutton:hover {\r\n    box-shadow: 4px 4px 6px rgb(65, 62, 62);\r\n}\r\n\r\n\r\n",
+		"\r\n\r\n@mixin flex-center($flex-direction) {\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n    flex-direction: $flex-direction;\r\n    min-height: 100vh;\r\n\r\n    .left {\r\n        position: relative;\r\n        left: -51%;\r\n        top: 50%;\r\n    }\r\n\r\n    .right {\r\n        position: relative;\r\n        left: 41%;\r\n        top: 50%;\r\n    }\r\n}\r\n\r\n\r\nheader {\r\n    @include flex-center(row);\r\n    background: rgb(24, 174, 224);        \r\n    min-height: 500px;\r\n    h1 {\r\n        color: rgb(12, 15, 165);        \r\n    }\r\n    button {\r\n        background: $primary;\r\n        color: $primary-contrast;\r\n        position: relative;\r\n        right: 2px;\r\n        top: 200px;\r\n    }\r\n\r\n    border-radius: 0px 0px 30px 30px;\r\n    box-shadow: none;\r\n}\r\n"
+	],
+	"names": [],
+	"mappings": ";AECA,AAAA,MAAM,CAAC;EACH,OAAO,EAAE,OAAO;EAChB,SAAS,EAAE,IAAI;EACf,MAAM,EAAE,IAAI;EACZ,aAAa,EAAE,IAAI;EACnB,MAAM,EAAE,IAAI;EACZ,UAAU,EAAE,GAAG,CAAC,GAAG,CAAC,GAAG,CAAC,OAAe;EACvC,UAAU,EAAE,WAAW;EACvB,SAAS,EAAE,IAAI;EAKf,KAAK,EAAE,IAAI;CACd;;;AAdD,AASI,MATE,CASF,IAAI,CAAC;EACD,SAAS,EAAE,IAAI;EACf,OAAO,EAAE,SAAS;CACrB;;;AAIL,AAAA,MAAM,AAAA,OAAO,EAAE,MAAM,AAAA,MAAM,CAAA;EACvB,MAAM,EAAE,IAAI;CACf;;;AACD,AAAA,MAAM,AAAA,MAAM,CAAC;EACT,UAAU,EAAE,GAAG,CAAC,GAAG,CAAC,GAAG,CAAC,OAAe;CAC1C;;;ACCD,AAAA,MAAM,CAAC;EApBH,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,MAAM;EACvB,WAAW,EAAE,MAAM;EACnB,cAAc,EAkBO,GAAG;EAjBxB,UAAU,EAAE,KAAK;EAkBjB,UAAU,EAAE,OAAiB;EAC7B,UAAU,EAAE,KAAK;EAYjB,aAAa,EAAE,iBAAiB;EAChC,UAAU,EAAE,IAAI;CACnB;;;AAjBD,AAdI,MAcE,CAdF,KAAK,CAAC;EACF,QAAQ,EAAE,QAAQ;EAClB,IAAI,EAAE,IAAI;EACV,GAAG,EAAE,GAAG;CACX;;;AAUL,AARI,MAQE,CARF,MAAM,CAAC;EACH,QAAQ,EAAE,QAAQ;EAClB,IAAI,EAAE,GAAG;EACT,GAAG,EAAE,GAAG;CACX;;;AAIL,AAII,MAJE,CAIF,EAAE,CAAC;EACC,KAAK,EAAE,OAAgB;CAC1B;;;AANL,AAOI,MAPE,CAOF,MAAM,CAAC;EACH,UAAU,EF9BP,uBAAuB;EE+B1B,KAAK,EF9BM,OAAc;EE+BzB,QAAQ,EAAE,QAAQ;EAClB,KAAK,EAAE,GAAG;EACV,GAAG,EAAE,KAAK;CACb;;;AH/BL,AAAA,OAAO,CAAC,MAAM,CAAC;EACX,UAAU,ECLH,uBAAuB;EDM9B,KAAK,ECLU,OAAc;CDMhC;;;AAED,AAAA,QAAQ,CAAC;EGPL,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,MAAM;EACvB,WAAW,EAAE,MAAM;EACnB,cAAc,EHKO,MAAM;EGJ3B,UAAU,EAAE,KAAK;CHKpB;;;AAFD,AGDI,QHCI,CGDJ,KAAK,CAAC;EACF,QAAQ,EAAE,QAAQ;EAClB,IAAI,EAAE,IAAI;EACV,GAAG,EAAE,GAAG;CACX;;;AHHL,AGKI,QHLI,CGKJ,MAAM,CAAC;EACH,QAAQ,EAAE,QAAQ;EAClB,IAAI,EAAE,GAAG;EACT,GAAG,EAAE,GAAG;CACX;;;AHNL,AAAA,OAAO,CAAC;EACJ,OAAO,EAAE,IAAI;CAChB;;;AAED,AACI,OADG,CACH,EAAE,CAAC;EACC,UAAU,EAAE,EAAE;CACjB"
+}

@@ -1,0 +1,22 @@
+@import './variables';
+@import './button';
+@import './header';
+
+
+.custom button {
+    background: $primary;
+    color: $primary-contrast;
+}
+
+.content {
+    @include flex-center(column);
+}
+.hidden {
+    display: none;
+}
+
+#slider {
+    h1 {
+        transition: 1s;
+    }
+}

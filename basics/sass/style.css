@@ -1,0 +1,110 @@
+/* line 2, ../../../Documents/_WorkShop/Personal/Sass/basics/styles/_button.scss */
+button {
+  padding: 2px 4px;
+  font-size: 14px;
+  border: none;
+  border-radius: 50px;
+  height: 60px;
+  box-shadow: 2px 2px 3px #413e3e;
+  background: transparent;
+  min-width: 60px;
+  color: #fff;
+}
+
+/* line 11, ../../../Documents/_WorkShop/Personal/Sass/basics/styles/_button.scss */
+button span {
+  font-size: 50px;
+  content: "U+0002B";
+}
+
+/* line 18, ../../../Documents/_WorkShop/Personal/Sass/basics/styles/_button.scss */
+button:active, button:focus {
+  border: none;
+}
+
+/* line 21, ../../../Documents/_WorkShop/Personal/Sass/basics/styles/_button.scss */
+button:hover {
+  box-shadow: 4px 4px 6px #413e3e;
+}
+
+/* line 24, ../../../Documents/_WorkShop/Personal/Sass/basics/styles/_header.scss */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  min-height: 100vh;
+  background: #18aee0;
+  min-height: 500px;
+  border-radius: 0px 0px 30px 30px;
+  box-shadow: none;
+}
+
+/* line 10, ../../../Documents/_WorkShop/Personal/Sass/basics/styles/_header.scss */
+header .left {
+  position: relative;
+  left: -51%;
+  top: 50%;
+}
+
+/* line 16, ../../../Documents/_WorkShop/Personal/Sass/basics/styles/_header.scss */
+header .right {
+  position: relative;
+  left: 41%;
+  top: 50%;
+}
+
+/* line 28, ../../../Documents/_WorkShop/Personal/Sass/basics/styles/_header.scss */
+header h1 {
+  color: #0c0fa5;
+}
+
+/* line 31, ../../../Documents/_WorkShop/Personal/Sass/basics/styles/_header.scss */
+header button {
+  background: rgba(3, 19, 241, 0.705);
+  color: #032538;
+  position: relative;
+  right: 2px;
+  top: 200px;
+}
+
+/* line 6, ../../../Documents/_WorkShop/Personal/Sass/basics/styles/style.scss */
+.custom button {
+  background: rgba(3, 19, 241, 0.705);
+  color: #032538;
+}
+
+/* line 11, ../../../Documents/_WorkShop/Personal/Sass/basics/styles/style.scss */
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* line 10, ../../../Documents/_WorkShop/Personal/Sass/basics/styles/_header.scss */
+.content .left {
+  position: relative;
+  left: -51%;
+  top: 50%;
+}
+
+/* line 16, ../../../Documents/_WorkShop/Personal/Sass/basics/styles/_header.scss */
+.content .right {
+  position: relative;
+  left: 41%;
+  top: 50%;
+}
+
+/* line 14, ../../../Documents/_WorkShop/Personal/Sass/basics/styles/style.scss */
+.hidden {
+  display: none;
+}
+
+/* line 19, ../../../Documents/_WorkShop/Personal/Sass/basics/styles/style.scss */
+#slider h1 {
+  transition: 1s;
+}
+
+/*# sourceMappingURL=style.css.map */
